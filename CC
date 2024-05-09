@@ -1,0 +1,9 @@
+public class UpdateAcc{
+    public static void main(){
+        Account[] oldAccounts=[SELECT Id,Description FROM Account ORDER BY CreatedDate];
+        for(Account acct:oldAccounts)
+        {
+            acct.Description='Heritage Account';
+        }
+        update oldAccounts;}
+}
